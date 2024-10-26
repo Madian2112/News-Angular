@@ -1,1 +1,27 @@
-<p>signal works!</p>
+<div class="input-group mb-3" style="margin-top: 2em;">
+    <span class="input-group-text" id="basic-addon1"></span>
+    <input 
+      (input)="quantity.set(($event))" 
+      [(ngModel)]="nombre1"
+      type="text" 
+      class="form-control" 
+      placeholder="Signal / ngModel" 
+      aria-label="Username" 
+      aria-describedby="basic-addon1"
+      [disabled]="disable"
+      >
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1"></span>
+    <input 
+      [(ngModel)]="nombre2"
+      type="text" 
+      class="form-control" 
+      placeholder="ngModel" 
+      aria-label="Username" 
+      aria-describedby="basic-addon1"
+      [disabled]="disable"
+      >
+  </div>
+  <app-button [nombre1]="nombre" [nombre2]="nombre2"/>
+  

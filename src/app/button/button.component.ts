@@ -9,7 +9,8 @@ import { Component, Output, EventEmitter, Input, Inject  } from '@angular/core';
 })
 export class ButtonComponent {
   @Output() botonClick = new EventEmitter<void>();
-  @Input() nombre? : String;
+  @Input() nombre1? : String;
+  @Input() nombre2? : String;
 
   // Método que se llamará al hacer clic en el botón
   onClick() {
